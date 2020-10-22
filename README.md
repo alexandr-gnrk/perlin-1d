@@ -77,4 +77,4 @@ LEFT/RIGHT | Change speed of moving noise
 M | Turn on/off marks
 I | Change interpolation method
 S | Reseed noise
-
+Space | Set speed of moving to 0
