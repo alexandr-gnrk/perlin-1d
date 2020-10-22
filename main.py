@@ -81,6 +81,8 @@ while running:
                 seed = random.randint(0, 2**32)
             elif event.key == pygame.K_m:
                 show_marks = False if show_marks else True
+            elif event.key == pygame.K_SPACE:
+                offset_speed = 0
 
     # create PerlinNoise object
     noise = PerlinNoise(seed, amplitude, frequency, octaves, interpolation)
@@ -112,7 +114,6 @@ while running:
     seed_inform = '(S) Seed: ' + str(seed)
     text_surface = font.render(seed_inform, True, BLACK)
     screen.blit(text_surface, dest=(WIDTH - text_surface.get_width() - 5, HEIGHT - FONT_SIZE))
-
 
     points = list()
     norma = WIDTH / segments
