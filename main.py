@@ -1,6 +1,5 @@
 import pygame
 import itertools
-from matplotlib import pyplot
 import random
 import math
 import time
