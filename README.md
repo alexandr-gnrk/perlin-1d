@@ -1,1 +1,68 @@
-# perlin-1d
+# One-dimensional Perlin noise
+This is implementation of one-dimensional [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise) algorithm and also its interactive demo.
+
+## Stack
+- Python3
+- [Pygame](https://www.pygame.org/news) (For demo)
+
+## Supported interpolation types
+- [Linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation)
+- [Cosine interpolation](https://en.wikipedia.org/wiki/Trigonometric_interpolation)
+- [Cubic interpolation](https://en.wikipedia.org/wiki/Cubic_Hermite_spline)
+
+## Setup
+Clone the repository and change the working directory:
+
+    git clone https://github.com/alexandr-gnrk/perlin-1d.git
+    cd perlin-1d
+Create and activate the virtual environment:
+
+    python3 -m venv ./venv
+    source ./venv/bin/activate
+Install requirements:
+
+    pip3 install -r requirements.txt
+Run the demo:
+
+    python3 main.py
+
+## PerlinNoise class usage
+Simple case: 
+
+    >>> from perlin_noise import PerlinNoise, Interp
+    >>> 
+    >>> seed = 10
+    >>> noise = PerlinNoise(seed)
+    >>> noise.get(0)
+    -0.7909696871365708
+    >>> noise.get(1)
+    -0.12853800531350212
+    >>> noise.get(0.24)
+    -0.7011998031545463
+    >>> noise.get(0.3)
+    -0.6544376328384862
+    >>> noise.get(5)
+    0.8343996279794508
+ 
+With specified **interpolation**:
+ 
+    >>> noise = PerlinNoise(seed, interp=Interp.LINEAR)
+    >>> noise.get(0)
+    -0.7909696871365708
+    >>> noise.get(1)
+    -0.12853800531350212
+    >>> noise.get(0.5)
+    -0.45975384622503646
+    
+With specified **amplitude**, **frequency**, **number of octaves** and **interpolation type**:
+
+    >>> noise = PerlinNoise(seed, 2, 10, 3, interp=Interp.CUBIC)
+    >>> noise.get(0.1)
+    0.12735558147138537
+    >>> noise.get(0.2)
+    0.7056095270509709
+    >>> noise.get(0.3)
+    -0.4716026010196055
+
+
+    
