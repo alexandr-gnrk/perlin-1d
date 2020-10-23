@@ -80,23 +80,28 @@ S | Reseed noise
 Space | Set speed of moving to 0
 
 ## Demo screenshots
-Simple 1D Perlin Noise:
+### Simple 1D Perlin Noise:
 ![Default noise](./screenshots/default_noise.png)
 
-Noise with a high amplitude:
+### Noise with a high amplitude:
 ![High amplitude noise](./screenshots/high_amplitude_noise.png)
 
-Noise with a high frequence:
+### Noise with a high frequence:
 ![High frequency noise](./screenshots/high_frequency_noise.png)
 
-Noise with 4 octaves:
+### Noise with 4 octaves:
 ![Four octaves noise](./screenshots/high_octaves_noise.png)
 
-Noise with marks on it:
+### Noise with marks on it:
 ![Noise with marks](./screenshots/marks_noise.png)
 
-Noise with linear interpolation:
+### Noise with linear interpolation:
 ![Linear noise](./screenshots/linear_noise.png)
 
-Noise with cubic interpolation:
+### Noise with cubic interpolation:
 ![Cubic noise](./screenshots/cubic_noise.png)
+
+## Useful links
+1. [Perlin Noise](https://web.archive.org/web/20160530124230/http://freespace.virgin.net/hugo.elias/models/m_perlin.htm)
+2. [1D Perlin noise](https://codepen.io/OliverBalfour/post/procedural-generation-part-1-1d-perlin-noise)
+3. [Interpolation methods](http://paulbourke.net/miscellaneous/interpolation/)
