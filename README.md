@@ -65,4 +65,16 @@ With specified **amplitude**, **frequency**, **number of octaves** and **interpo
     -0.4716026010196055
 
 
-    
+## Demo control
+
+Keys | Action
+------------ | -------------
+A/Z | Increase/decrease amplitude
+F/V | Increase/decrease frequency
+O/L | Increase/decrease number of octaves
+UP/DOWN | Increase/decrease number of segments on screen (implicit frequency)
+LEFT/RIGHT | Change speed of moving noise
+M | Turn on/off marks
+I | Change interpolation method
+S | Reseed noise
+
