@@ -1,6 +1,6 @@
 # One-dimensional Perlin noise
 This is implementation of one-dimensional [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise) algorithm and also its interactive demo.
-
+![Perlin noise](./screenshots/intro_image.png)
 ## Stack
 - Python3
 - [Pygame](https://www.pygame.org/news) (For demo)
@@ -78,3 +78,25 @@ M | Turn on/off marks
 I | Change interpolation method
 S | Reseed noise
 Space | Set speed of moving to 0
+
+## Demo screenshots
+Simple 1D Perlin Noise:
+![Default noise](./screenshots/default_noise.png)
+
+Noise with a high amplitude:
+![High amplitude noise](./screenshots/high_amplitude_noise.png)
+
+Noise with a high frequence:
+![High frequency noise](./screenshots/high_frequency_noise.png)
+
+Noise with 4 octaves:
+![Four octaves noise](./screenshots/high_octaves_noise.png)
+
+Noise with marks on it:
+![Noise with marks](./screenshots/marks_noise.png)
+
+Noise with linear interpolation:
+![Linear noise](./screenshots/linear_noise.png)
+
+Noise with cubic interpolation:
+![Cubic noise](./screenshots/cubic_noise.png)
