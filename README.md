@@ -1,6 +1,6 @@
 # One-dimensional Perlin noise
 This is implementation of one-dimensional [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise) algorithm and also its interactive demo.
-![Perlin noise](./screenshots/intro_image.png)
+![Perlin noise](./screenshots/noise2.gif)
 ## Stack
 - Python3
 - [Pygame](https://www.pygame.org/news) (For demo)
