@@ -28,42 +28,43 @@ Run the demo:
 
 ## PerlinNoise class usage
 Simple case: 
-
-    >>> from perlin_noise import PerlinNoise, Interp
-    >>> 
-    >>> seed = 10
-    >>> noise = PerlinNoise(seed)
-    >>> noise.get(0)
-    -0.7909696871365708
-    >>> noise.get(1)
-    -0.12853800531350212
-    >>> noise.get(0.24)
-    -0.7011998031545463
-    >>> noise.get(0.3)
-    -0.6544376328384862
-    >>> noise.get(5)
-    0.8343996279794508
- 
+```python3
+>>> from perlin_noise import PerlinNoise, Interp
+>>> 
+>>> seed = 10
+>>> noise = PerlinNoise(seed)
+>>> noise.get(0)
+-0.7909696871365708
+>>> noise.get(1)
+-0.12853800531350212
+>>> noise.get(0.24)
+-0.7011998031545463
+>>> noise.get(0.3)
+-0.6544376328384862
+>>> noise.get(5)
+0.8343996279794508
+```
 With specified **interpolation**:
- 
-    >>> noise = PerlinNoise(seed, interp=Interp.LINEAR)
-    >>> noise.get(0)
-    -0.7909696871365708
-    >>> noise.get(1)
-    -0.12853800531350212
-    >>> noise.get(0.5)
-    -0.45975384622503646
+```python3
+>>> noise = PerlinNoise(seed, interp=Interp.LINEAR)
+>>> noise.get(0)
+-0.7909696871365708
+>>> noise.get(1)
+-0.12853800531350212
+>>> noise.get(0.5)
+-0.45975384622503646
+```
     
 With specified **amplitude**, **frequency**, **number of octaves** and **interpolation type**:
-
-    >>> noise = PerlinNoise(seed, 2, 10, 3, interp=Interp.CUBIC)
-    >>> noise.get(0.1)
-    0.12735558147138537
-    >>> noise.get(0.2)
-    0.7056095270509709
-    >>> noise.get(0.3)
-    -0.4716026010196055
-
+```python3
+>>> noise = PerlinNoise(seed, 2, 10, 3, interp=Interp.CUBIC)
+>>> noise.get(0.1)
+0.12735558147138537
+>>> noise.get(0.2)
+0.7056095270509709
+>>> noise.get(0.3)
+-0.4716026010196055
+```
 
 ## Demo control
 
